@@ -64,8 +64,6 @@ alt="C++Now 2018: Rong Lu “C++ Development with Visual Studio Code”" width="
                    "command": "g++ -g myprogram.cpp -o myprogram",
                    // multiple build tasks are possible
                    // this sets as default
-                   // Program to be built from
-                   // [Terminal -> Run Build Task...]
                    "group": {
                        "kind": "build",
                        "isDefault": true
