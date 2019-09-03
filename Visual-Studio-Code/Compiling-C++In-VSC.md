@@ -1,4 +1,4 @@
-## Compiling C++ wthin the Visual Studio Code IDE.
+## Compiling C++ within the Visual Studio Code IDE.
 * Note: These steps are written for a computer running Linux Mint 19. With different distros and operating systems, your mileage will vary. Most importantly, these differences are found in terms of menu selections. Therefore, do not focus so much on the first menu selection, but focus on the proceeding selections.
 
 ### Conventions used:
