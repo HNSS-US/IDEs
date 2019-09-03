@@ -24,7 +24,7 @@
    A bash debugger GUI frontend based on awesome bashdb scripts  
    (bashdb now included in package).
 7. shellman  
-   Learn Bash Scripting with Shellman, examples included. [Download](https://github.com/yousefvand/shellman-ebook) free ebook (pdf, epub, mobi).
+   Learn Bash Scripting with Shellman, examples included. [Download](https://github.com/yousefvand/shellman-ebook) free ebook (pdf, epub, mobi).  
    
    
      
