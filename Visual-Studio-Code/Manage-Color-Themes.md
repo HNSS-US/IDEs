@@ -16,6 +16,3 @@
   4.7 Currently using Dark+ (default dark)
   
   For more information see [Material Theme](https://material-theme.site/) Website.
-  
-      
-  
