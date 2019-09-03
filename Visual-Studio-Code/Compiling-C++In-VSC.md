@@ -28,6 +28,8 @@ alt="C++Now 2018: Rong Lu “C++ Development with Visual Studio Code”" width="
 5. Create .cpp file // Example used here is myprogram.cpp  
    5.1 save myprogram.cpp  
        [File -> Save]
+       The file should be saved as:
+       ~/Whatever/Directory/You/WantProgram/myprogram.cpp  
 6. Compile code  
    6.1 For me (Linux):  
         [Terminal -> Configure  Tasks... ->  
