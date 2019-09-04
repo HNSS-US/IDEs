@@ -18,8 +18,20 @@
 " target="_blank"><img src="http://img.youtube.com/vi/-erXR6k9TeE/0.jpg" 
 alt="C++Now 2018: Rong Lu “C++ Development with Visual Studio Code”" width="240" height="180" border="10" /></a>
 
-#### Steps
-###### Steps 1-3 are linux-centric steps
+#### The Compilation Process  
+   * Preprocessor  
+   .. Takes C++ sorce code (.cpp) and evaluates  
+      preprocessor directives. For example, #include  
+   .. Produces a preprocessed source file (usually part of the compiler)  
+   * Compiler  
+   .. Takes preprocessed source code, compiles into object files.  
+   .. Checks that code conforms syntactically and semantically in C++  
+   .. Accepts promises from the code about things defined in other source files.  
+   * Linker  
+   .. Takes object files, links them into an executable program.  
+   .. Ensures that all of the promises to the compilerr are kept.  
+#### Steps to ccompile C++ code in VS Code using tasks.json
+###### (Steps 1-3 are linux-centric steps)
 1. mkdir -p ~/Whatever/Directory/You/WantProgram
 2. cd ~/Whatever/Directory/You/WantProgram
 3. // launch VSC  
