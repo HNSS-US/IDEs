@@ -25,6 +25,9 @@
    (bashdb now included in package).
 7. shellman  
    Learn Bash Scripting with Shellman, examples included. [Download](https://github.com/yousefvand/shellman-ebook) free ebook (pdf, epub, mobi).  
+8. Remote - SSH  
+  The Remote - SSH extension lets you use any remote machine with a SSH server as your development environment. This can  
+  greatly simplify development and troubleshooting in a wide variety of situations.  
    
    
      
