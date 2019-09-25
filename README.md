@@ -3,3 +3,4 @@
 1. Visual Studio Code  
 2. MySQL Workbench  
 3. GitHub  
+4. Git  
