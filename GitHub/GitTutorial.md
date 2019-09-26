@@ -1,11 +1,14 @@
 #### Git Tutorial for Beginners - Crash Course 
-Used this video as main source  
+Used this video as main source, however I start to deviat at step  
+
 <a href="https://www.youtube.com/watch?v=_OZVJpLHUaI
 " target="_blank"><img src="http://img.youtube.com/vi/_OZVJpLHUaI/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>  
 **Goal Create Git Repository for all my classes at Del Tech**  
-*(Copied and pased from my own terminal)*  
-**Current directory structure**  
+The following is copied and pasted from my terminal. I am showing  
+the command entered and then the result. Note, I am repeating commands
+only to see the changes and not as part of the process.
+1. Current directory structure  
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> ls -alF
 total 120
 drwxrwxr-x  5 james james  4096 Sep 26 16:22 <font color="#729FCF"><b>.</b></font>/
@@ -16,7 +19,7 @@ drwxrwxr-x  3 james james  4096 Sep  1 21:48 <font color="#729FCF"><b>HIS</b></f
 -rw-rw-r--  1 james james 65285 Sep  3 07:22 README.md
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
 </pre>  
-**Create local git repository** 
+2. Create local git repository  
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git init
 Initialized empty Git repository in /home/james/DelTech/.git/
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font></pre>  
@@ -32,7 +35,7 @@ drwxrwxr-x  3 james james  4096 Sep  1 21:48 <font color="#729FCF"><b>HIS</b></f
 -rw-rw-r--  1 james james 65285 Sep  3 07:22 README.md
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
 </pre>
-**Checking status of Git Repository** 
+3. Checking status of Git Repository  
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git status
 On branch master  
 No commits yet  
@@ -45,15 +48,16 @@ Untracked files:
 nothing added to commit but untracked files present (use &quot;git add&quot; to track)  
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font>   
 </pre>  
-**Checking status of log
+4. Checking status of log  
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git log
 fatal: your current branch &apos;master&apos; does not have any commits yet
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> </pre>
-**Now adding changes**
-*(Notice: No response)*
+5. Now adding changes  
+*(Notice: Notice, there is no response. Also, I had a lot of files and this took a few seconds.
+  this method adds everything in the directory and below to git.)*
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git add .
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> </pre>  
-**Repeat checking status**  
+6. Repeat checking status    
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git status
 On branch master
 No commits yet
@@ -74,7 +78,7 @@ Changes to be committed:
 	<font color="#4E9A06">new file:   README.md</font>
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
 </pre>  
-**Repeat Checking log**  
+7. Repeat Checking log  
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git log
 fatal: your current branch &apos;master&apos; does not have any commits yet
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
