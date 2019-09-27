@@ -6,6 +6,7 @@ just one file.
 <a href="https://www.youtube.com/watch?v=_OZVJpLHUaI
 " target="_blank"><img src="http://img.youtube.com/vi/_OZVJpLHUaI/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>  
+
 **Goal Create Git Repository for all my classes at Del Tech**  
 The following is copied and pasted from my terminal. I am showing  
 the command entered and then the result. Note, I am repeating commands
@@ -59,29 +60,8 @@ fatal: your current branch &apos;master&apos; does not have any commits yet
   this method adds everything in the directory and below to git.)*
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git add .
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> </pre>  
-6. Repeat checking status    
-<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git status
-On branch master
-No commits yet
-Changes to be committed:
-  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
-	<font color="#4E9A06">new file:   CSC/CSC114/Assignment0/Assignment0.odt</font>
-	<font color="#4E9A06">new file:   CSC/CSC114/Assignment0/CSC114Assignment0_Ethics.pdf</font>
-	<font color="#4E9A06">new file:   CSC/CSC114/Assignment1/.vscode/tasks.json</font>
-	<font color="#4E9A06">new file:   CSC/CSC114/Assignment1/Assignment1.zip</font>
-	<font color="#4E9A06">new file:   CSC/CSC114/Assignment1/averagevalues</font>
-	.
-	.
-	.
-</pre>  
-<pre>	<font color="#4E9A06">new file:   HIS/HIS111/TestNotes/Test1_Paragraphs.txt</font>
-	<font color="#4E9A06">new file:   HIS/HIS111/Zip_Files/HIST, Comprehensive 5th Edition by Kevin M. Schultz sm.zip</font>
-	<font color="#4E9A06">new file:   HIS/HIS111/Zip_Files/HIST, Comprehensive 5th Edition by Kevin M. Schultz_test_bank.zip</font>
-	<font color="#4E9A06">new file:   README.md</font>
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
-</pre>  
-7. Repeating *git log* and *git status* is the same as before.  
-8. Commiting to Git with "comment"
+6. Repeating *git log* and *git status* is the same as before.  
+7. Commiting to Git with "comment"  
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git commit -m &quot;creation of git&quot;
 [master (root-commit) 3f2d714] creation of git
  159 files changed, 179954 insertions(+)
@@ -97,7 +77,7 @@ Changes to be committed:
  create mode 100644 README.md
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
 </pre>  
-9. Checking status of log
+8. Checking status of log  
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git log
 <font color="#C4A000">commit 3f2d714968fcb87dfc13d008fa0ca2f813c1623c (</font><font color="#34E2E2"><b>HEAD -&gt; </b></font><font color="#8AE234"><b>master</b></font><font color="#C4A000">)</font>
 Author: HNSS-US &lt;james@T420&gt;
@@ -105,7 +85,7 @@ Date:   Thu Sep 26 18:51:48 2019 -0400
 
     creation of git
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font></pre>  
-10. Check Status
+9. Check Status  
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git status
 On branch master
 nothing to commit, working tree clean
@@ -116,19 +96,8 @@ On branch master
 nothing to commit, working tree clean
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
 </pre>  
-11. The following diagram shows what we have 
+10. The following diagram shows what we have 
 done and what we are about to do  
 Git branching:  
 ![git branch](https://guides.github.com/activities/hello-world/branching.png "Git Branch Image")  
-
-
-
-
-
-
-
-
-#### GitHub Tutorial for Beginners - Crash Course  
-<a href="https://www.youtube.com/watch?v=mVnZVw4KJnc
-" target="_blank"><img src="http://img.youtube.com/vi/mVnZVw4KJnc/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>  
+11.
