@@ -3,7 +3,9 @@
              Markdown allows you to write using an easy-to-read,  
              easy-to-write plain text format, then convert it to  
              structurally valid XHTML (or HTML).  
-             [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
+             [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet "Markdown Cheat Sheet")   
+             [Full Markdown Syntax](https://daringfireball.net/projects/markdown/syntax#blockquote "Daring Fireball")
+             
 2. ASCII Cheat Sheet: Some characters, such as "$", need to be written in hex as "0x24".  
              [ASCII Cheat Sheet](https://www.w3schools.com/charsets/ref_html_entities_4.asp "w3schools") gives the codes.  
              Here are some more:  
