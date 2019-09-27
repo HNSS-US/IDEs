@@ -27,7 +27,7 @@ drwxrwxr-x  3 james james  4096 Sep  1 21:48 <font color="#729FCF"><b>HIS</b></f
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git init
 Initialized empty Git repository in /home/james/DelTech/.git/
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font></pre>  
-*New directory .git is created*  
+*(Notice: A new directory ".git" is created*)*
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> ls -alF
 total 120
 drwxrwxr-x  5 james james  4096 Sep 26 16:22 <font color="#729FCF"><b>.</b></font>/
@@ -57,8 +57,8 @@ nothing added to commit but untracked files present (use &quot;git add&quot; to 
 fatal: your current branch &apos;master&apos; does not have any commits yet
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> </pre>
 **5. Now adding changes**  
-*(Notice: Notice, there is no response. Also, I had a lot of files and this took a few seconds.
-  this method adds everything in the directory and below to git.)*
+*(Notice: There is no response after running this command. Also, I had a lot of files 
+and this took a few seconds. Here the ".", adds everything in the directory and below to git.)*  
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git add .
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> </pre>  
 **6. Repeating *git log* and *git status* is the same as before.**  
