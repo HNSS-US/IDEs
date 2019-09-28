@@ -92,11 +92,6 @@ On branch master
 nothing to commit, working tree clean
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
 </pre>  
-<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git status
-On branch master
-nothing to commit, working tree clean
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
-</pre>  
 **10. Git branch diagram**  
 The following diagram shows what we have 
 done and what we are about to do  
