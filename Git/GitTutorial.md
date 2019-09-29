@@ -1,5 +1,10 @@
 #### Git Tutorial for Beginners - Crash Course 
-**Introduction**  
+##### Table of contents
+1. [Introduction](#introduction)  
+2. [Steps](#steps)  
+3. [Trobule shooting](#troubleshooting)  
+
+**Introduction**  <a name="introduction"></a>
 I used this video as reference source. However, I start with
 an existing directory structure and add that to Git. Then, I work on
 just one file.
@@ -12,6 +17,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 The following is copied and pasted from my terminal. I am showing  
 the command entered and then the result. Note, I am repeating commands
 only to see the changes and not as part of the process.  
+**Steps <a name="steps"></a>
 **1. Current directory structure**  
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> ls -alF
 total 120
@@ -98,3 +104,5 @@ done and what we are about to do
 Git branching:  
 ![git branch](https://guides.github.com/activities/hello-world/branching.png "Git Branch Image")  
 **11. Working with one file**
+
+##### Trobule shooting]  <a name="troubleshooting">
