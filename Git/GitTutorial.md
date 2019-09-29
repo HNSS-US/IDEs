@@ -107,7 +107,7 @@ Git branching:
 ![git branch](https://guides.github.com/activities/hello-world/branching.png "Git Branch Image")  
 **2.11 Working with one file**
 
-#### 3 Trobule shooting
+### 3 Trobule shooting  
 **3.1 File was deleted via command line, now unable to have it sync with Git <a name="TS1"></a>  
       Changes not staged for commit:  
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/Textbooks $</b></font> rm text.txt</pre>  
