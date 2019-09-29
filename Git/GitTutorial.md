@@ -1,8 +1,9 @@
 #### Git Tutorial for Beginners - Crash Course 
 ##### Table of contents
 1. [Introduction](#introduction)  
-2. [Steps](#steps)  
-3. [Trobule shooting](#troubleshooting)  
+2. [Steps](#steps)   
+3. Trobule shooting  
+   File was deleted via command line(#TS1)
 
 **Introduction**  <a name="introduction"></a>
 I used this video as reference source. However, I start with
@@ -105,8 +106,63 @@ Git branching:
 ![git branch](https://guides.github.com/activities/hello-world/branching.png "Git Branch Image")  
 **11. Working with one file**
 
-#### Trobule shooting <a name="troubleshooting">
+#### Trobule shooting
+File was deleted via command line, now unable to have it sync with Git <a name="TS1"></a>  
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/Textbooks $</b></font> rm text.txt</pre>  
+##### After completing Assignment4, checked Git status
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114/Assignment4 $</b></font> git status  
+On branch master  
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+	<font color="#4E9A06">modified:   .vscode/tasks.json</font>
+	<font color="#4E9A06">new file:   Assignment4.zip</font>
+	<font color="#4E9A06">new file:   distance_traveled5_6</font>
+	<font color="#4E9A06">modified:   distance_traveled5_6.cpp</font>
+	<font color="#4E9A06">new file:   membership_fee_increase5_5</font>
+	<font color="#4E9A06">modified:   membership_fee_increase5_5.cpp</font>
+	<font color="#4E9A06">new file:   sum_numbers5_1</font>
+	<font color="#4E9A06">modified:   sum_numbers5_1.cpp</font>
+Changes not staged for commit:
+  (use &quot;git add/rm &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
 
+	<font color="#CC0000">deleted:    ../../Textbooks/dropped text.txt</font>
 
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114/Assignment4 $</b></font></pre>  
+##### Commited to 
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114/Assignment4 $</b></font> git commit -m &quot;Assignment4&quot;
+[master b3aa52c] Assignment4
+ 8 files changed, 244 insertions(+), 82 deletions(-)
+ create mode 100644 CSC/CSC114/Assignment4/Assignment4.zip
+ create mode 100755 CSC/CSC114/Assignment4/distance_traveled5_6
+ create mode 100755 CSC/CSC114/Assignment4/membership_fee_increase5_5
+ create mode 100755 CSC/CSC114/Assignment4/sum_numbers5_1
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114/Assignment4 $</b></font></pre>  
+
+##### Checked Git status  
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114/Assignment4 $</b></font> git status
+On branch master
+Changes not staged for commit:
+  (use &quot;git add/rm &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+	<font color="#CC0000">deleted:    ../../Textbooks/dropped text.txt</font>
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114/Assignment4 $</b></font> </pre>  
+##### To remove  
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/Textbooks $</b></font> git add -u .
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/Textbooks $</b></font></pre>  
+
+##### Corrected  
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/Textbooks $</b></font> git status
+On branch master
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+
+	<font color="#4E9A06">deleted:    dropped text.txt</font>
+
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/Textbooks $</b></font> 
+</pre>  
 
 ##### [Back to top](#introduction)  
