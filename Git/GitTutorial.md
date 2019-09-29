@@ -3,7 +3,7 @@
 1. [Introduction](#introduction)  
 2. [Steps](#steps)   
 3. Trobule shooting  
-   File was deleted via command line(#TS1)
+   3.1 [File was deleted via command line](#TS1)
 
 **Introduction**  <a name="introduction"></a>
 I used this video as reference source. However, I start with
