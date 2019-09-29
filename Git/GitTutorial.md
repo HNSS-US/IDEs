@@ -105,4 +105,8 @@ Git branching:
 ![git branch](https://guides.github.com/activities/hello-world/branching.png "Git Branch Image")  
 **11. Working with one file**
 
-##### Trobule shooting]  <a name="troubleshooting">
+#### Trobule shooting <a name="troubleshooting">
+
+
+
+#### Back to top (#introduction)
