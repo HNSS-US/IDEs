@@ -11,14 +11,17 @@ Git is a type of version control. Version control allows you to
 store your progress in a type of "database".
 Diagram:  
 ![etower](https://www.git-tower.com/learn/media/pages/git/ebook/en/command-line/basics/what-is-version-control/1234869142-1570000299/what-is-vcs.png "etower")  
-The advantage to using version control is you are able to go back in time to see the changes made to a project. For example, you changed a program and want to revert back to what was done. Version controlworks whether working alone or in a group.
-
+The advantage to using version control is you are able to go back in time to  
+see the changes made to a project. For example, you changed a program and  
+want to revert back to what was done. Version controlworks whether working   
+alone or in a group.  
 **2. Goal Create Git Repository for all my classes at Del Tech**  
-Here the example used is for CSC114. The other courses will be added in
-the same fashion.  
-The following is copied and pasted from my terminal. I am showing  
-the command entered and then the result. Note, I am repeating commands
-only to see the changes and not as part of the process.  
+Here the example used is for CSC114. The other courses will  
+be added in the same fashion.  
+The following is copied and pasted from my terminal.  
+I am showing the command entered and then the result.  
+Note, I am repeating commands only to see the changes  
+and not as part of the process.  
 **Steps <a name="steps"></a>
 **2.1 Current directory structure**  
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> ls -alF
@@ -41,21 +44,32 @@ drwxrwxr-x  3 james james 4096 Sep 25 20:30 <font color="#729FCF"><b>Test1</b></
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> 
 </pre>  
 **2.2 Create local git repository**  
-<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git init
-Initialized empty Git repository in /home/james/DelTech/.git/
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font></pre>  
-*(Notice: A new directory ".git" is created*)*
-<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> ls -alF
-total 120
-drwxrwxr-x  5 james james  4096 Sep 26 16:22 <font color="#729FCF"><b>.</b></font>/
-drwx------ 59 james james 20480 Sep 26 10:47 <font color="#729FCF"><b>..</b></font>/
--rw-rw-r--  1 james james   820 Sep  1 18:17 ConfigureDTCCUsersWiFi.md
-drwxrwxr-x  5 james james  4096 Sep 23 21:57 <font color="#729FCF"><b>CSC</b></font>/
-drwxrwxr-x  7 james james  4096 Sep 26 16:25 <font color="#729FCF"><b>.git</b></font>/
-drwxrwxr-x  3 james james  4096 Sep  1 21:48 <font color="#729FCF"><b>HIS</b></font>/
--rw-rw-r--  1 james james 65285 Sep  3 07:22 README.md
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
-</pre>
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> git init
+Initialized empty Git repository in /home/james/DelTech/CSC/CSC114/.git/
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> 
+</pre>  
+Listing the directory again shows new file:  
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> ls -alF
+total 64
+drwxrwxr-x 16 james james 4096 Oct  5 22:44 <font color="#729FCF"><b>.</b></font>/
+drwxrwxr-x  5 james james 4096 Sep 23 21:57 <font color="#729FCF"><b>..</b></font>/
+drwxrwxr-x  2 james james 4096 Sep  1 18:48 <font color="#729FCF"><b>Assignment0</b></font>/
+drwxrwxr-x  3 james james 4096 Sep  1 18:47 <font color="#729FCF"><b>Assignment1</b></font>/
+drwxrwxr-x  3 james james 4096 Sep  6 21:05 <font color="#729FCF"><b>Assignment2</b></font>/
+drwxrwxr-x  3 james james 4096 Sep 22 02:04 <font color="#729FCF"><b>Assignment3</b></font>/
+drwxrwxr-x  3 james james 4096 Sep 29 11:19 <font color="#729FCF"><b>Assignment4</b></font>/
+drwxrwxr-x  3 james james 4096 Oct  5 20:20 <font color="#729FCF"><b>Assignment5</b></font>/
+drwxrwxr-x  2 james james 4096 Sep  1 18:17 <font color="#729FCF"><b>CheckPoint2</b></font>/
+drwxrwxr-x  3 james james 4096 Sep 23 10:51 <font color="#729FCF"><b>CheckPoint3</b></font>/
+drwxrwxr-x  2 james james 4096 Sep 16 21:07 <font color="#729FCF"><b>CheckPoint4</b></font>/
+drwxrwxr-x  3 james james 4096 Oct  2 20:43 <font color="#729FCF"><b>CheckPoint5</b></font>/
+drwxrwxr-x  3 james james 4096 Oct  5 20:20 <font color="#729FCF"><b>FunWithC++</b></font>/
+drwxrwxr-x  7 james james 4096 Oct  5 22:44 <font color="#729FCF"><b>.git</b></font>/
+drwxrwxr-x  5 james james 4096 Sep 30 19:57 <font color="#729FCF"><b>PrgrmPrnExmp</b></font>/
+drwxrwxr-x  3 james james 4096 Sep 25 20:30 <font color="#729FCF"><b>Test1</b></font>/
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> 
+</pre>  
+
 **2.3 Checking status of Git Repository**    
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git status
 On branch master  
