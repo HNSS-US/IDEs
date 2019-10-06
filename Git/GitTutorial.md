@@ -7,15 +7,15 @@
        error: *Changes not staged for commit:*
 
 **1. Introduction**  <a name="introduction"></a>
-I used this video as reference source. However, I start with
-an existing directory structure and add that to Git. Then, I work on
-just one file.
-
-<a href="https://www.youtube.com/watch?v=_OZVJpLHUaI
-" target="_blank"><img src="http://img.youtube.com/vi/_OZVJpLHUaI/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>  
+Git is a type of version control. Version control allows you to 
+store your progress in a type of "database".
+Diagram:  
+![etower](https://www.git-tower.com/learn/media/pages/git/ebook/en/command-line/basics/what-is-version-control/1234869142-1570000299/what-is-vcs.png "etower")  
+The advantage to using version control is you are able to go back in time to see the changes made to a the project. This process works whether working alone or in a group.
 
 **2. Goal Create Git Repository for all my classes at Del Tech**  
+Here the example used is for CSC114. The other courses will be added in
+the same fashion.  
 The following is copied and pasted from my terminal. I am showing  
 the command entered and then the result. Note, I am repeating commands
 only to see the changes and not as part of the process.  
