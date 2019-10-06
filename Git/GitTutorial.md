@@ -17,59 +17,33 @@ want to revert back to what was done. Version controlworks whether working
 alone or in a group.
 
 **2. Goal Create Git Repository for all my classes at Del Tech**  
-Here the example used is for CSC114. The other courses will  
-be added in the same fashion.  
-The following is copied and pasted from my terminal.  
-I am showing the command entered and then the result.  
-Note, I am repeating commands only to see the changes  
-and not as part of the process.  
-
+I have information saved on Github, but not to a local repository.  
+I am going to create the local repository to automate updating
+Github.  
 **Steps** <a name="steps"></a>
+**2.0 Created directory DelTech**
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~ $</b></font> mkdir DelTech
+</pre>  
+
 **2.1 Current directory structure**  
-<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> ls -alF
-total 60
-drwxrwxr-x 15 james james 4096 Oct  2 20:08 <font color="#729FCF"><b>.</b></font>/
-drwxrwxr-x  5 james james 4096 Sep 23 21:57 <font color="#729FCF"><b>..</b></font>/
-drwxrwxr-x  2 james james 4096 Sep  1 18:48 <font color="#729FCF"><b>Assignment0</b></font>/
-drwxrwxr-x  3 james james 4096 Sep  1 18:47 <font color="#729FCF"><b>Assignment1</b></font>/
-drwxrwxr-x  3 james james 4096 Sep  6 21:05 <font color="#729FCF"><b>Assignment2</b></font>/
-drwxrwxr-x  3 james james 4096 Sep 22 02:04 <font color="#729FCF"><b>Assignment3</b></font>/
-drwxrwxr-x  3 james james 4096 Sep 29 11:19 <font color="#729FCF"><b>Assignment4</b></font>/
-drwxrwxr-x  3 james james 4096 Oct  5 20:20 <font color="#729FCF"><b>Assignment5</b></font>/
-drwxrwxr-x  2 james james 4096 Sep  1 18:17 <font color="#729FCF"><b>CheckPoint2</b></font>/
-drwxrwxr-x  3 james james 4096 Sep 23 10:51 <font color="#729FCF"><b>CheckPoint3</b></font>/
-drwxrwxr-x  2 james james 4096 Sep 16 21:07 <font color="#729FCF"><b>CheckPoint4</b></font>/
-drwxrwxr-x  3 james james 4096 Oct  2 20:43 <font color="#729FCF"><b>CheckPoint5</b></font>/
-drwxrwxr-x  3 james james 4096 Oct  5 20:20 <font color="#729FCF"><b>FunWithC++</b></font>/
-drwxrwxr-x  5 james james 4096 Sep 30 19:57 <font color="#729FCF"><b>PrgrmPrnExmp</b></font>/
-drwxrwxr-x  3 james james 4096 Sep 25 20:30 <font color="#729FCF"><b>Test1</b></font>/
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> 
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> ls -alF
+total 24
+drwxrwxr-x  2 james james  4096 Oct  5 23:25 <font color="#729FCF"><b>.</b></font>/
+drwx------ 61 james james 20480 Oct  5 23:25 <font color="#729FCF"><b>..</b></font>/
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
 </pre>  
 **2.2 Create local git repository**  
-<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> git init
-Initialized empty Git repository in /home/james/DelTech/CSC/CSC114/.git/
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> 
+ <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git init
+Initialized empty Git repository in /home/james/DelTech/.git/
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
 </pre>  
 Listing the directory again shows new file:  
-<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> ls -alF
-total 64
-drwxrwxr-x 16 james james 4096 Oct  5 22:44 <font color="#729FCF"><b>.</b></font>/
-drwxrwxr-x  5 james james 4096 Sep 23 21:57 <font color="#729FCF"><b>..</b></font>/
-drwxrwxr-x  2 james james 4096 Sep  1 18:48 <font color="#729FCF"><b>Assignment0</b></font>/
-drwxrwxr-x  3 james james 4096 Sep  1 18:47 <font color="#729FCF"><b>Assignment1</b></font>/
-drwxrwxr-x  3 james james 4096 Sep  6 21:05 <font color="#729FCF"><b>Assignment2</b></font>/
-drwxrwxr-x  3 james james 4096 Sep 22 02:04 <font color="#729FCF"><b>Assignment3</b></font>/
-drwxrwxr-x  3 james james 4096 Sep 29 11:19 <font color="#729FCF"><b>Assignment4</b></font>/
-drwxrwxr-x  3 james james 4096 Oct  5 20:20 <font color="#729FCF"><b>Assignment5</b></font>/
-drwxrwxr-x  2 james james 4096 Sep  1 18:17 <font color="#729FCF"><b>CheckPoint2</b></font>/
-drwxrwxr-x  3 james james 4096 Sep 23 10:51 <font color="#729FCF"><b>CheckPoint3</b></font>/
-drwxrwxr-x  2 james james 4096 Sep 16 21:07 <font color="#729FCF"><b>CheckPoint4</b></font>/
-drwxrwxr-x  3 james james 4096 Oct  2 20:43 <font color="#729FCF"><b>CheckPoint5</b></font>/
-drwxrwxr-x  3 james james 4096 Oct  5 20:20 <font color="#729FCF"><b>FunWithC++</b></font>/
-drwxrwxr-x  7 james james 4096 Oct  5 22:44 <font color="#729FCF"><b>.git</b></font>/
-drwxrwxr-x  5 james james 4096 Sep 30 19:57 <font color="#729FCF"><b>PrgrmPrnExmp</b></font>/
-drwxrwxr-x  3 james james 4096 Sep 25 20:30 <font color="#729FCF"><b>Test1</b></font>/
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> 
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> ls -alF
+total 28
+drwxrwxr-x  3 james james  4096 Oct  5 23:34 <font color="#729FCF"><b>.</b></font>/
+drwx------ 61 james james 20480 Oct  5 23:25 <font color="#729FCF"><b>..</b></font>/
+drwxrwxr-x  7 james james  4096 Oct  5 23:34 <font color="#729FCF"><b>.git</b></font>/
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
 </pre>  
 **2.3 Ignoring files**  
 At the start of creating the repository, I know I do not want to  
@@ -85,42 +59,32 @@ For:
   **filename.ext**  
 - Ignore all files of a certain type (anywhere in the project):  
   ***.ext**  
+  <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> vi .gitignore</pre>  
  **2.4 Making first commit**  
- <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> git add -A
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> 
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git add -A
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
 </pre>  
-<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> git commit -m &quot;Initial commit CSC114&quot;
-[master (root-commit) 8f76f1a] Initial commit CSC114
- 86 files changed, 3648 insertions(+)
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git commit -m &quot;Inital Commit DelTech&quot;
+[master (root-commit) ea9d301] Inital Commit DelTech
+ 1 file changed, 1 insertion(+)
  create mode 100644 .gitignore
- create mode 100644 Assignment0/Assignment0.odt
-</pre>
-.
-.
-.
-<pre>create mode 100644 Test1/.vscode/settings.json
- create mode 100644 Test1/.vscode/tasks.json
- create mode 100755 Test1/test1Part2
- create mode 100644 Test1/test1Part2.cpp
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> 
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
 </pre>  
 **2.3 Checking status of Git Repository**    
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git status
-On branch master  
-No commits yet  
-Untracked files:  
-  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)  
-	<font color="#CC0000">CSC/</font>  
-	<font color="#CC0000">ConfigureDTCCUsersWiFi.md</font>  
-	<font color="#CC0000">HIS/</font>  
-	<font color="#CC0000">README.md</font>  
-nothing added to commit but untracked files present (use &quot;git add&quot; to track)  
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font>   
-</pre>  
+On branch master
+nothing to commit, working tree clean
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
+</pre>    
 **2.4 Checking status of log** 
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git log
-fatal: your current branch &apos;master&apos; does not have any commits yet
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> </pre>
+<font color="#C4A000">commit ea9d3018b81b82c96e5261e62a091cf0d7756f53 (</font><font color="#34E2E2"><b>HEAD -&gt; </b></font><font color="#8AE234"><b>master</b></font><font color="#C4A000">)</font>
+Author: HNSS-US &lt;james@T420&gt;
+Date:   Sat Oct 5 23:46:25 2019 -0400
+
+    Inital Commit DelTech
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
+</pre>  
 **2.5 Now adding changes**  
 *(Notice: There is no response after running this command. Also, I had a lot of files 
 and this took a few seconds. Here the ".", adds everything in the directory and below to git.)*  
