@@ -14,7 +14,8 @@ Diagram:
 The advantage to using version control is you are able to go back in time to  
 see the changes made to a project. For example, you changed a program and  
 want to revert back to what was done. Version controlworks whether working   
-alone or in a group.  
+alone or in a group.
+
 **2. Goal Create Git Repository for all my classes at Del Tech**  
 Here the example used is for CSC114. The other courses will  
 be added in the same fashion.  
@@ -22,7 +23,8 @@ The following is copied and pasted from my terminal.
 I am showing the command entered and then the result.  
 Note, I am repeating commands only to see the changes  
 and not as part of the process.  
-**Steps <a name="steps"></a>
+
+**Steps** <a name="steps"></a>
 **2.1 Current directory structure**  
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> ls -alF
 total 60
@@ -69,7 +71,39 @@ drwxrwxr-x  5 james james 4096 Sep 30 19:57 <font color="#729FCF"><b>PrgrmPrnExm
 drwxrwxr-x  3 james james 4096 Sep 25 20:30 <font color="#729FCF"><b>Test1</b></font>/
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> 
 </pre>  
-
+**2.3 Ignoring files**  
+At the start of creating the repository, I know I do not want to  
+use version control on certain files. For example, I do not want .pdf
+files versioned. Therefore, make a file called ".gitignore". Then
+add the file(s) to ignore.
+For:  
+- Ignore one specific file: Provide the full path to the file, seen   
+  from the root folder of your project.  
+  **path/to/file.ext**  
+- Ignore all files with a certain name (anywhere in the project):  
+  Just write down the file's name, without giving a path.  
+  **filename.ext**  
+- Ignore all files of a certain type (anywhere in the project):  
+  ***.ext**  
+ **2.4 Making first commit**  
+ <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> git add -A
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> 
+</pre>  
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> git commit -m &quot;Initial commit CSC114&quot;
+[master (root-commit) 8f76f1a] Initial commit CSC114
+ 86 files changed, 3648 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Assignment0/Assignment0.odt
+</pre>
+.
+.
+.
+<pre>create mode 100644 Test1/.vscode/settings.json
+ create mode 100644 Test1/.vscode/tasks.json
+ create mode 100755 Test1/test1Part2
+ create mode 100644 Test1/test1Part2.cpp
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech/CSC/CSC114 $</b></font> 
+</pre>  
 **2.3 Checking status of Git Repository**    
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git status
 On branch master  
