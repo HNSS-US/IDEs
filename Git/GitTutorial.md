@@ -16,11 +16,27 @@ see the changes made to a project. For example, you changed a program and
 want to revert back to what was done. Version controlworks whether working   
 alone or in a group.
 
-**2. Goal Create Git Repository for all my classes at Del Tech**  
+**synch local directory with Github**  
 I have information saved on Github, but not to a local repository.  
-I am going to create the local repository to automate updating
-Github.  
+I am going to create the local repository to update Github.  
 **Steps** <a name="steps"></a>
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~ $</b></font> git clone https://github.com/HNSS-US/DelTech.git
+Cloning into &apos;DelTech&apos;...
+remote: Enumerating objects: 101, done.
+remote: Counting objects: 100% (101/101), done.
+remote: Compressing objects: 100% (99/99), done.
+remote: Total 656 (delta 43), reused 0 (delta 0), pack-reused 555
+Receiving objects: 100% (656/656), 1.00 MiB | 9.61 MiB/s, done.
+Resolving deltas: 100% (278/278), done.
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~ $</b></font> </pre>  
+
+
+
+
+
+
+*********** TODO  New Repository ************************************
+
 **2.0 Created directory DelTech**
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~ $</b></font> mkdir DelTech
 </pre>  
@@ -46,10 +62,10 @@ drwxrwxr-x  7 james james  4096 Oct  5 23:34 <font color="#729FCF"><b>.git</b></
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
 </pre>  
 **2.3 Ignoring files**  
-At the start of creating the repository, I know I do not want to  
-use version control on certain files. For example, I do not want .pdf
-files versioned. Therefore, make a file called ".gitignore". Then
-add the file(s) to ignore.
+At the start of creating the repository, I know I do not want to   
+use version control on certain files. For example, I do not  
+want .pdf files versioned. Therefore, create a file  
+called ".gitignore". Then add the file(s) to ignore.  
 For:  
 - Ignore one specific file: Provide the full path to the file, seen   
   from the root folder of your project.  
@@ -85,7 +101,7 @@ Date:   Sat Oct 5 23:46:25 2019 -0400
     Inital Commit DelTech
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
 </pre>  
-**2.5 Now adding changes**  
+**2.5 Now adding repository from Github**  
 *(Notice: There is no response after running this command. Also, I had a lot of files 
 and this took a few seconds. Here the ".", adds everything in the directory and below to git.)*  
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git add .
