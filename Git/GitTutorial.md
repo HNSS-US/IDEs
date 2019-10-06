@@ -1,7 +1,7 @@
 #### Git Tutorial for Beginners - Crash Course 
 ##### Table of contents
 1. [Introduction](#introduction)  
-2. [Steps](#steps)   
+2. Instru
 3. Troubleshooting  
    3.1 [File was deleted via command line](#TS1)  
        error: *Changes not staged for commit:*
@@ -15,11 +15,11 @@ The advantage to using version control is you are able to go back in time to
 see the changes made to a project. For example, you changed a program and  
 want to revert back to what was done. Version controlworks whether working   
 alone or in a group.
-
-**synch local directory with Github**  
+**Steps** <a name="steps"></a>
+**synch local directory with Github**   <a name="synchGithub"></a>
 I have information saved on Github, but not to a local repository.  
 I am going to create the local repository to update Github.  
-**Steps** <a name="steps"></a>
+
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~ $</b></font> git clone https://github.com/HNSS-US/DelTech.git
 Cloning into &apos;DelTech&apos;...
 remote: Enumerating objects: 101, done.
