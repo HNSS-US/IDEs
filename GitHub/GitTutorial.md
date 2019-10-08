@@ -1,25 +1,32 @@
-#### Git Tutorial for Beginners - Crash Course 
-##### Table of contents
-1. [Introduction](#introduction)  
-2. Instru
+# Git Tutorial for Beginners - Crash Course  
+## Table of contents  
+1. Introduction to [guide](#introduction)  
+2. Instructions  
+   2.1 synch local directory with existing repository on [Github](#synchGithub)  
+   2.2 Create new repository and synch with Github [(TODO)](#newRepository)
 3. Troubleshooting  
-   3.1 [File was deleted via command line](#TS1)  
-       error: *Changes not staged for commit:*
+   3.1 File was deleted via command [line](#TS1)  
+       error: *Changes not staged for commit:*  
+4. References  
+   4.1 git [website](https://git-scm.com/ "git-scm.com")  
+   4.2 Pro Git [book](https://git-scm.com/book/en/v2 "ProGitBook")  
+   4.3 Tower [website](https://www.git-tower.com/learn/git/ebook/en/command-line/basics/what-is-version-control#start "git-tower.com")  
+   4.4 This page was built with Visual Studio using the Instant Markdown [extension](https://marketplace.visualstudio.com/items?itemName=dbankier.vscode-instant-markdown "marketplace.visualstudio.com")  
 
 **1. Introduction**  <a name="introduction"></a>
 Git is a type of version control. Version control allows you to 
 store your progress in a type of "database".
-Diagram:  
-![etower](https://www.git-tower.com/learn/media/pages/git/ebook/en/command-line/basics/what-is-version-control/1234869142-1570000299/what-is-vcs.png "etower")  
+(Diagram from git-tower.com)  
+![etower](https://www.git-tower.com/learn/media/pages/git/ebook/en/command-line/basics/what-is-version-control/1234869142-1570000299/what-is-vcs.png "Version Control")  
 The advantage to using version control is you are able to go back in time to  
 see the changes made to a project. For example, you changed a program and  
-want to revert back to what was done. Version controlworks whether working   
-alone or in a group.
-**Steps** <a name="steps"></a>
-**synch local directory with Github**   <a name="synchGithub"></a>
-I have information saved on Github, but not to a local repository.  
-I am going to create the local repository to update Github.  
+want to revert back to what was done. Version controlworks whether working  
+alone or in a group.  
 
+**2.1 synch local directory with existing repository on Github** <a name="synchGithub"></a>  
+I have information saved on Github, but not to a local repository.  
+I am going to create the local repository to update Github. This  
+pulls all the directories and files from my Github account.  
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~ $</b></font> git clone https://github.com/HNSS-US/DelTech.git
 Cloning into &apos;DelTech&apos;...
 remote: Enumerating objects: 101, done.
@@ -30,119 +37,120 @@ Receiving objects: 100% (656/656), 1.00 MiB | 9.61 MiB/s, done.
 Resolving deltas: 100% (278/278), done.
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~ $</b></font> </pre>  
 
+**2.1.1  [Ignoring files](#IgnoreFiles)**  
+Creating .gitignore file now. I am ignoring .pdf  
+files so the textbooks are not pushed to Github.  
+Those files are too large to store on Github.  
 
+**2.1.2 Adding files and directories**  
+I added the source code from the textbook to  
+my DelTech repository and the .gitignore file.  
 
-
-
-
-*********** TODO  New Repository ************************************
-
-**2.0 Created directory DelTech**
-<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~ $</b></font> mkdir DelTech
-</pre>  
-
-**2.1 Current directory structure**  
-<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> ls -alF
-total 24
-drwxrwxr-x  2 james james  4096 Oct  5 23:25 <font color="#729FCF"><b>.</b></font>/
-drwx------ 61 james james 20480 Oct  5 23:25 <font color="#729FCF"><b>..</b></font>/
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
-</pre>  
-**2.2 Create local git repository**  
- <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git init
-Initialized empty Git repository in /home/james/DelTech/.git/
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
-</pre>  
-Listing the directory again shows new file:  
-<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> ls -alF
-total 28
-drwxrwxr-x  3 james james  4096 Oct  5 23:34 <font color="#729FCF"><b>.</b></font>/
-drwx------ 61 james james 20480 Oct  5 23:25 <font color="#729FCF"><b>..</b></font>/
-drwxrwxr-x  7 james james  4096 Oct  5 23:34 <font color="#729FCF"><b>.git</b></font>/
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
-</pre>  
-**2.3 Ignoring files**  
-At the start of creating the repository, I know I do not want to   
-use version control on certain files. For example, I do not  
-want .pdf files versioned. Therefore, create a file  
-called ".gitignore". Then add the file(s) to ignore.  
-For:  
-- Ignore one specific file: Provide the full path to the file, seen   
-  from the root folder of your project.  
-  **path/to/file.ext**  
-- Ignore all files with a certain name (anywhere in the project):  
-  Just write down the file's name, without giving a path.  
-  **filename.ext**  
-- Ignore all files of a certain type (anywhere in the project):  
-  ***.ext**  
-  <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> vi .gitignore</pre>  
- **2.4 Making first commit**  
-<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git add -A
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
-</pre>  
-<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git commit -m &quot;Inital Commit DelTech&quot;
-[master (root-commit) ea9d301] Inital Commit DelTech
- 1 file changed, 1 insertion(+)
- create mode 100644 .gitignore
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
-</pre>  
-**2.3 Checking status of Git Repository**    
+***Checking status:***  
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git status
 On branch master
-nothing to commit, working tree clean
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
-</pre>    
-**2.4 Checking status of log** 
-<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git log
-<font color="#C4A000">commit ea9d3018b81b82c96e5261e62a091cf0d7756f53 (</font><font color="#34E2E2"><b>HEAD -&gt; </b></font><font color="#8AE234"><b>master</b></font><font color="#C4A000">)</font>
-Author: HNSS-US &lt;james@T420&gt;
-Date:   Sat Oct 5 23:46:25 2019 -0400
+Your branch is ahead of &apos;origin/master&apos; by 1 commit.
+  (use &quot;git push&quot; to publish your local commits)
 
-    Inital Commit DelTech
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+	<font color="#CC0000">.gitignore</font>
+	<font color="#CC0000">CSC/CSC114/GaddisExamples/</font>
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font>  
 </pre>  
-**2.5 Now adding repository from Github**  
-*(Notice: There is no response after running this command. Also, I had a lot of files 
-and this took a few seconds. Here the ".", adds everything in the directory and below to git.)*  
-<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git add .
+***Now to add the directory:***  
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git add -vA  
+add &apos;.gitignore&apos;
+add &apos;CSC/CSC114/GaddisExamples/AppendixE/PrE-1.cpp&apos;
+</pre>
+.
+.
+.
+<pre>add &apos;CSC/CSC114/GaddisExamples/Chapter21/Pr21-3.cpp&apos;
+add &apos;CSC/CSC114/GaddisExamples/Chapter21/Pr21-4.cpp&apos;
+add &apos;CSC/CSC114/GaddisExamples/Chapter21/Pr21-5.cpp&apos;
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> </pre>  
-**2.6 Repeating *git log* and *git status* is the same as before.**  
-**2.7 Commiting to Git with "comment"**  
-<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git commit -m &quot;creation of git&quot;
-[master (root-commit) 3f2d714] creation of git
- 159 files changed, 179954 insertions(+)
- create mode 100644 CSC/CSC114/Assignment0/Assignment0.odt
- create mode 100644 CSC/CSC114/Assignment0/CSC114Assignment0_Ethics.pdf
- create mode 100644 CSC/CSC114/Assignment1/.vscode/tasks.json
- create mode 100644 CSC/CSC114/Assignment1/Assignment1.zip
- .
- .
- .
- create mode 100644 HIS/HIS111/Zip_Files/HIST, Comprehensive 5th Edition by Kevin M. Schultz sm.zip
- create mode 100644 HIS/HIS111/Zip_Files/HIST, Comprehensive 5th Edition by Kevin M. Schultz_test_bank.zip
- create mode 100644 README.md
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
-</pre>  
-**2.8 Checking status of log**  
-<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git log
-<font color="#C4A000">commit 3f2d714968fcb87dfc13d008fa0ca2f813c1623c (</font><font color="#34E2E2"><b>HEAD -&gt; </b></font><font color="#8AE234"><b>master</b></font><font color="#C4A000">)</font>
-Author: HNSS-US &lt;james@T420&gt;
-Date:   Thu Sep 26 18:51:48 2019 -0400
 
-    creation of git
-<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font></pre>  
-**2.9 Check Status**  
+The options used for the *git add* command where:  
+-v --verbose be verbose and  -A --all --no-ignore-removal  
+The complete list of options is found on the git [website](https://git-scm.com/docs/git-add#_name "git-scm.com")  
+
+***Doing a commit*** 
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git commit -m &quot;Added Gaddis directory and .gitignore&quot;
+[master 964aa29] Added Gaddis directory and .gitignore
+ 605 files changed, 26670 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 CSC/CSC114/GaddisExamples/AppendixE/PrE-1.cpp
+ create mode 100644 CSC/CSC114/GaddisExamples/AppendixE/PrE-2.cpp
+</pre>
+...
+<pre>create mode 100644 CSC/CSC114/GaddisExamples/Chapter21/Pr21-5.cpp
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech</b></font></pre>  
+***Checking status***  
 <pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git status
 On branch master
+Your branch is ahead of &apos;origin/master&apos; by 2 commits.
+  (use &quot;git push&quot; to publish your local commits)
+
 nothing to commit, working tree clean
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font></pre>  
+**2.1.3 Pushing to Github**  
+(Diagram from git-tower.com)  
+![Remote Repository](https://www.git-tower.com/learn/media/pages/git/ebook/en/command-line/remote-repositories/introduction/-1045933932-1570000299/basic-remote-workflow.png "Remote Repository")  
+Here, the remote repository is Github.  The command used is *git push*. This command takes two arguments:  
+(a) The remote repository we want to push.  
+(b) The branch on that remote repository we want to push.  
+
+**2.1.3.1**
+***Checking before push. (-v List all currently configured remotes)***
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git remote -v
+origin	https://github.com/HNSS-US/DelTech.git (fetch)
+origin	https://github.com/HNSS-US/DelTech.git (push)
 <font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
 </pre>  
-**2.10 Git branch diagram**  
-The following diagram shows what we have 
-done and what we are about to do  
-Git branching:  
-![git branch](https://guides.github.com/activities/hello-world/branching.png "Git Branch Image")  
-**2.11 Working with one file**
+The "fetch URL" which is used for reading access.  
+The "push URL", used when you want to write data to the remote.  
+In many cases, both URLs are the same. However, you can also  
+use this to define different URLs for read and write access  
+(for security and performance reasons).  
+
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git branch -va
+* master                964aa29 [ahead 2] Added Gaddis directory and .gitignore
+  remotes/origin/HEAD   -> origin/master
+  remotes/origin/master 6390ad1 Add files via upload
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
+</pre>  
+
+**This command gives the repository names.**  
+**for (a) The remote repository we want to push:**  
+***origin***  
+**and (b) The branch on that remote repository we want to push is:**  
+***master***    
+
+This is the Github repository before git push:
+![Before push](https://raw.githubusercontent.com/HNSS-US/images/master/BeforePush.jpeg "Before push")  
+<pre><font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> git push origin master
+Username for &apos;https://github.com&apos;: HNSS-US
+Password for &apos;https://HNSS-US@github.com&apos;: 
+Counting objects: 668, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (638/638), done.
+Writing objects: 100% (668/668), 250.29 KiB | 3.63 MiB/s, done.
+Total 668 (delta 54), reused 0 (delta 0)
+remote: Resolving deltas: 100% (54/54), completed with 3 local objects.
+To https://github.com/HNSS-US/DelTech.git
+   6390ad1..964aa29  master -&gt; master
+<font color="#8AE234"><b>james@T420</b></font> <font color="#729FCF"><b>~/DelTech $</b></font> 
+</pre>  
+This is the Github repository after git push:  
+![After push](https://raw.githubusercontent.com/HNSS-US/images/master/AfterPush.jpeg "After push")  
+The GaddisExample directory and all 660+ files are saved to the remote repository Github.
+
+*** TODO  New Repository *** <a name="newRepository"></a>
+
 
 ### 3 Troubleshooting  
 **3.1 File was deleted via command line, now unable to have it sync with Git <a name="TS1"></a>  
