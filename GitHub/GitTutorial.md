@@ -3,7 +3,7 @@
 1. Introduction to [guide](#introduction)  
 2. Instructions  
    2.1 synch local directory with existing repository on [Github](#synchGithub)  
-   2.2 Create new repository and synch with Github [(TODO)](#newRepository)
+   2.2 Add exiting project to [Github](https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line)
 3. Troubleshooting  
    3.1 File was deleted via command [line](#TS1)  
        error: *Changes not staged for commit:*  
@@ -150,6 +150,7 @@ This is the Github repository after git push:
 The GaddisExample directory and all 660+ files are saved to the remote repository Github.
 
 *** TODO  New Repository *** <a name="newRepository"></a>
+**2.2 ** <a name="newRepository"></a>  
 
 
 ### 3 Troubleshooting  
